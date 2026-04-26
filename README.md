@@ -95,16 +95,7 @@ The current API:
 - returns success/error JSON
 - does not persist data permanently
 
-## AI Usage Explanation
-
-AI mainly helped as a support tool during the development process. It was most useful in speeding up the early structure of the page, generating a first pass for some components, and helping me explore alternate layout directions faster.
-
-AI helped with:
-
-- planning the page structure and implementation flow
-- generating an initial component scaffold
-- refining some copy and layout ideas
-- accelerating iterative UI adjustments while matching the reference
+## Explanation
 
 Manual improvements made:
 
@@ -124,17 +115,6 @@ Most of the meaningful work still came from manual implementation and iteration.
 - Handling iterative UI fixes where a layout looked reasonable in code but needed manual browser-side adjustments to feel correct.
 - Resolving dev-runtime and cached build issues during rapid iteration.
 
-## Improvements With More Time
-
-- connect the lead form to a real database or CRM
-- add stronger accessibility testing and keyboard-state polish
-- replace simplified illustrations with production-quality brand assets
-- add animation/motion polish where it improves the experience
-- tighten section-by-section visual matching even further
-
-## If Given One More Day
-
-If I had one more day, I would focus on pushing the visual polish closer to the original reference. That would mainly include more detailed spacing and typography refinement, more realistic branded artwork, and a stronger final pass on mobile responsiveness. I would also upgrade the current mock API route into a real persisted lead system using a database or external service.
 
 ## Features Implemented
 
@@ -144,20 +124,3 @@ If I had one more day, I would focus on pushing the visual polish closer to the 
 - Basic SEO through Next.js metadata
 - Interactive UI elements such as sticky navigation, section linking, and polished CTA/footer presentation
 
-## Incorrect AI Output Handling
-
-Some AI-generated suggestions were not accurate enough for the final UI, especially around spacing, alignment, and layout behavior compared to the reference design. When that happened, I reviewed the code manually, tested the affected section in the browser, identified the cause of the mismatch, and rewrote or refined the implementation myself. AI helped speed up iteration, but the final adjustments and debugging were handled manually.
-
-## Ownership Statement
-
-This project is my own work, and I understand the code submitted. AI was used as an assisting tool during development, but the final implementation, refinements, debugging, and decision-making were handled manually.
-
-
-## Verification
-
-The project has been verified with:
-
-```bash
-npm run lint
-npm run build
-```
