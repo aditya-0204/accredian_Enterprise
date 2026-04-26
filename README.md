@@ -72,12 +72,21 @@ public/
 - Recreated the key reference sections with a focus on layout clarity, responsiveness, and maintainable code structure.
 - Added a mock API integration for the enquiry form so the submission requirement is covered even without a database.
 
+## Component Structure
+
+- `app/page.tsx` composes the landing page by rendering section components in sequence.
+- `components/sections/` contains the main page sections such as hero, stats, edge, testimonials, lead form, and footer-adjacent content.
+- `components/` contains shared UI pieces like the header, footer, section heading, and partner logo renderer.
+- `data/site.ts` stores the structured content used across the page so the components remain focused on layout and presentation.
+
+This structure made it easier to iterate section by section, keep the code readable, and adjust content or layout without rewriting large files.
+
 ## API Integration
 
 The project includes a mock API integration:
 
-- Frontend form: [components/sections/lead-section.tsx](/d:/coding/DSA/internship/Accredian/components/sections/lead-section.tsx)
-- API route: [app/api/lead/route.ts](/d:/coding/DSA/internship/Accredian/app/api/lead/route.ts)
+- Frontend form: `components/sections/lead-section.tsx`
+- API route: `app/api/lead/route.ts`
 
 The current API:
 
@@ -88,6 +97,8 @@ The current API:
 
 ## AI Usage Explanation
 
+AI mainly helped as a support tool during the development process. It was most useful in speeding up the early structure of the page, generating a first pass for some components, and helping me explore alternate layout directions faster.
+
 AI helped with:
 
 - planning the page structure and implementation flow
@@ -97,11 +108,21 @@ AI helped with:
 
 Manual improvements made:
 
+- section and component organization
 - section-by-section visual tuning to better match the reference
 - responsive alignment fixes and spacing cleanup
 - card, footer, testimonial, and stats layout refinements
 - local illustration wiring for segmentation cards
 - mock API behavior and README polish
+
+Most of the meaningful work still came from manual implementation and iteration. I treated AI output as a starting point, then adjusted the code myself until the layout, responsiveness, and styling behaved the way I wanted.
+
+## Challenges Faced
+
+- Matching the layout closely to the reference while still keeping the code reusable and responsive.
+- Fine-tuning sections like the stats area, edge timeline, testimonials, and footer so they looked visually balanced across different screen sizes.
+- Handling iterative UI fixes where a layout looked reasonable in code but needed manual browser-side adjustments to feel correct.
+- Resolving dev-runtime and cached build issues during rapid iteration.
 
 ## Improvements With More Time
 
@@ -111,14 +132,26 @@ Manual improvements made:
 - add animation/motion polish where it improves the experience
 - tighten section-by-section visual matching even further
 
-## Deployment on Vercel
+## If Given One More Day
 
-1. Push the project to GitHub.
-2. Import the repository into Vercel.
-3. Let Vercel detect the app as a Next.js project.
-4. Deploy with the default build settings.
+If I had one more day, I would focus on pushing the visual polish closer to the original reference. That would mainly include more detailed spacing and typography refinement, more realistic branded artwork, and a stronger final pass on mobile responsiveness. I would also upgrade the current mock API route into a real persisted lead system using a database or external service.
 
-No environment variables are required for the current mock API version.
+## Features Implemented
+
+- Lead capture form
+- Mock API integration through Next.js route handlers
+- Responsive layout optimization across sections
+- Basic SEO through Next.js metadata
+- Interactive UI elements such as sticky navigation, section linking, and polished CTA/footer presentation
+
+## Incorrect AI Output Handling
+
+Some AI-generated suggestions were not accurate enough for the final UI, especially around spacing, alignment, and layout behavior compared to the reference design. When that happened, I reviewed the code manually, tested the affected section in the browser, identified the cause of the mismatch, and rewrote or refined the implementation myself. AI helped speed up iteration, but the final adjustments and debugging were handled manually.
+
+## Ownership Statement
+
+This project is my own work, and I understand the code submitted. AI was used as an assisting tool during development, but the final implementation, refinements, debugging, and decision-making were handled manually.
+
 
 ## Verification
 
