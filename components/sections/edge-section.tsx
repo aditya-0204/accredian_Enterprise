@@ -135,7 +135,7 @@ export function EdgeSection() {
                       style={{ height: `${bottomConnectorHeight}px` }}
                     />
                     <span className="absolute left-1/2 top-[2px] z-10 size-2.5 -translate-x-1/2 rounded-full bg-[#2e8dd8]" />
-                    <div className="relative w-[240px] pl-[108px]">
+                    <div className="relative w-[240px] pl-[90px]">
                       <h3 className="text-[1rem] font-semibold leading-7 text-slate-950 xl:text-[1.08rem]">
                         {item.title}
                       </h3>
