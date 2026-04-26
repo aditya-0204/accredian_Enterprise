@@ -29,7 +29,7 @@ export function Footer() {
 
             <a
               href="#lead"
-              className="relative z-10 inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-8 py-4 text-xl font-semibold text-[#246be8] transition hover:bg-slate-50 sm:self-start lg:self-auto"
+              className="relative z-10 inline-flex min-w-[250px] items-center justify-center gap-3 whitespace-nowrap rounded-2xl bg-white px-10 py-4 text-lg font-semibold text-[#246be8] transition hover:bg-slate-50 sm:self-start lg:self-auto"
             >
               {footerCta.button}
               <ButtonIcon className="size-5" />
@@ -90,7 +90,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[1.1rem] font-semibold text-slate-950">Contact Us</h4>
+            <h4 className="text-2xl font-semibold text-slate-950">Contact Us</h4>
             <div className="mt-4 space-y-3 text-[0.98rem] leading-8 text-slate-700">
               <p>
                 Email us:{" "}

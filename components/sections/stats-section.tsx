@@ -19,18 +19,18 @@ export function StatsSection() {
           }
         />
 
-        <div className="mt-14 grid gap-8 lg:grid-cols-3">
+        <div className="mt-14 grid gap-10 lg:grid-cols-3 lg:gap-0">
           {stats.map((item, index) => (
             <div
               key={item.value}
-              className={`rounded-[2rem] border border-slate-200 bg-white p-8 text-center shadow-sm ${
-                index === 1 ? "lg:translate-y-4" : ""
+              className={`px-6 text-center lg:px-12 ${
+                index < stats.length - 1 ? "lg:border-r lg:border-slate-200" : ""
               }`}
             >
-              <div className="mx-auto inline-flex rounded-full bg-[#e8f1ff] px-8 py-4 text-5xl font-semibold text-[#246be8]">
+              <div className="mx-auto inline-flex rounded-full bg-[#dfeeff] px-10 py-3 text-4xl font-semibold text-[#246be8] sm:text-5xl">
                 {item.value}
               </div>
-              <p className="mx-auto mt-6 max-w-sm text-2xl leading-10 text-slate-900">
+              <p className="mx-auto mt-6 max-w-sm text-[1.05rem] font-medium leading-9 text-slate-950 sm:text-[1.15rem]">
                 {item.label}
               </p>
             </div>
