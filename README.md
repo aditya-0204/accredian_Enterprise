@@ -124,3 +124,4 @@ Most of the meaningful work still came from manual implementation and iteration.
 - Basic SEO through Next.js metadata
 - Interactive UI elements such as sticky navigation, section linking, and polished CTA/footer presentation
 
+## screenshot
